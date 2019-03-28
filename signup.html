@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+     <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="Bootstrap/dist/css/bootstrap.css">
+
+    <script src="Bootstrap/dist/js/bootstrap.js"></script>
+<link href="signup_page.css" rel="stylesheet">
+
+</head>
+<body style="background-color: rgb(79,79,70)">
+
+<div class="container-fluid " style="border-bottom: white 2px solid">
+    <div class="row justify-content-center m-5">
+        <div class="col-2"><img src="logo.jpg" width="150px"></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-6" id="heading">Bootstrap Signup </div>
+    <div class="col-sm-8 col-10">
+        <div class="row justify-content-center">
+            <div class="col-8"><form method="post" action="/signup/add" onsubmit="return fieldscheck()">
+                <div class="row">
+                    <div class="col-4 m-1 p-3 divtext"> First Name </div>
+                    <div class="col-6 p-2">
+                        <input class="input-group-text" placeholder="Eg. Bill"  type="text" name="firstname">
+                    </div>
+                </div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> Last Name </div> <div class="col-6 p-2"> <input placeholder="Eg. Cullen" class="input-group-text" type="text" name="lastname"></div> </div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext">  Username </div><div class="col-6 p-2"> <input class="input-group-text" type="email" name="username" placeholder="abc@gmail.com"></div></div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext">  Password </div><div class="col-6 p-2"> <input class="input-group-text" type="password" name="password" placeholder="12abH"></div></div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> Re-enter Password </div><div class="col-6 p-2"><input class="input-group-text" type="password" name="repassword"></div></div>
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> DOB </div><div class="col-6 p-2"> <input class="input-group-text" type="date" name="dob"></div></div>
+
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> Security Question </div> <div class="col-6 p-2"> <input class="input-group-text" type="text" name="securityques" placeholder="What is Your Pet's Name ?"></div> </div>
+
+                <div class="row">   <div class="col-4 m-1 p-3 divtext"> Security Answer </div> <div class="col-6 p-2"> <input class="input-group-text" type="text" name="securityans" placeholder="Allen"></div> </div>
+                <div class="row justify-content-center">  <div class="col-5 m-3 divtext"> <input class="btn btn-info" type="submit"></div> </div>
+            </form> </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+</body>
+</html>
